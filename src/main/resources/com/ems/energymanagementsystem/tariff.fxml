@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane fx:id="parentContainer" xmlns:fx="http://javafx.com/fxml" fx:controller="com.ems.energymanagementsystem.TariffController">
+    <content>
+        <VBox spacing="15.0">
+            <Label alignment="CENTER" text="*All fields are required!" textFill="#edb309">
+                <font>
+                    <Font name="Arial" size="13.0"/>
+                </font>
+            </Label>
+            <TextField fx:id="textName" promptText="Tariff Name"/>
+            <TextField fx:id="textElectricityRate" promptText="Electricity Rate" />
+            <TextField fx:id="textGasRate" promptText="Gas Rate" />
+        </VBox>
+    </content>
+</DialogPane>

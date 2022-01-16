@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane fx:id="parentContainer" prefHeight="265.0" prefWidth="264.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.ems.energymanagementsystem.CustomerController">
+    <content>
+        <VBox spacing="15.0">
+            <Label alignment="CENTER" text="*All fields are required!" textFill="#edb309">
+                <font>
+                    <Font name="Arial" size="13.0" />
+                </font>
+            </Label>
+            <TextField fx:id="textFullName" promptText="FullName" />
+            <TextField fx:id="textPhoneNumber" promptText="Phone Number" />
+            <TextField fx:id="textAddress" promptText="Address" />
+            <ComboBox fx:id="comboBoxTariff" prefHeight="26.0" prefWidth="240.0" promptText="Please select a tariff" />
+            <TextField fx:id="textMeterType" promptText="Meter Type" />
+            <TextField fx:id="textAccNumber" promptText="Account/Meter Number" />
+        </VBox>
+    </content>
+</DialogPane>

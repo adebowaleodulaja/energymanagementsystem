@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="container" prefHeight="400.0" prefWidth="400.0" spacing="15.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.ems.energymanagementsystem.GenerateInvoiceController">
+    <padding>
+        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0"/>
+    </padding>
+    <Label text="Fields prefixed with asterisks are required." textFill="red"/>
+    <HBox spacing="5.0">
+        <Label text="Tariff Type:"/>
+        <TextField fx:id="textTariffType" prefHeight="26.0" prefWidth="302.0" promptText="Enter the tariff type"/>
+    </HBox>
+    <HBox spacing="5.0">
+        <Label text="Meter No:"/>
+        <TextField fx:id="textMeterNo" prefHeight="26.0" prefWidth="302.0" promptText="Enter the meter number"/>
+    </HBox>
+    <HBox spacing="10.0">
+        <DatePicker fx:id="dateFrom" editable="false" promptText="*Period From"/>
+        <DatePicker fx:id="dateTo" editable="false" promptText="*Period To"/>
+    </HBox>
+    <HBox spacing="5.0">
+        <Label text="*Opening Read:"/>
+        <TextField fx:id="textOpeningRead" prefHeight="26.0" prefWidth="277.0" promptText="Enter the opening read"/>
+    </HBox>
+    <HBox spacing="5.0">
+        <Label text="*Closing Read:"/>
+        <TextField fx:id="textClosingRead" prefHeight="26.0" prefWidth="283.0" promptText="Enter the closing read"/>
+    </HBox>
+    <HBox spacing="5.0">
+        <Label text="Kilowatt Used:"/>
+        <TextField fx:id="textKilowatt" prefHeight="26.0" prefWidth="286.0" promptText="Kilowatt used for the period"/>
+    </HBox>
+    <HBox spacing="5.0">
+        <Label text="Rate:"/>
+        <TextField fx:id="textRate" prefHeight="26.0" prefWidth="335.0" promptText="Rate"/>
+    </HBox>
+    <HBox spacing="5.0">
+        <Label text="(£)Price:"/>
+        <TextField fx:id="textPrice" prefHeight="26.0" prefWidth="316.0" promptText="Price"/>
+    </HBox>
+    <HBox spacing="5.0">
+        <Label text="Customer Name:"/>
+        <TextField fx:id="textCusFullName" prefHeight="26.0" prefWidth="273.0" promptText="Customer Fullname"/>
+    </HBox>
+    <HBox spacing="5.0">
+        <Label text="*Payment Status:"/>
+        <ComboBox fx:id="comboPaymentStatus" editable="true" prefHeight="26.0" prefWidth="270.0"
+                  promptText="Select payment status"/>
+    </HBox>
+</VBox>

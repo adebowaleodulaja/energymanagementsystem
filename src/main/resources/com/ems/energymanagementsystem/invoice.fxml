@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.ems.energymanagementsystem.InvoiceController">
+    <padding>
+        <Insets bottom="5.0" left="10.0" top="10.0" right="10.0" />
+    </padding>
+    <HBox style="-fx-background-color: yellow">
+        <Label text="Your total new electricity charges" textFill="mediumpurple">
+            <font>
+                <Font size="20" />
+            </font>
+        </Label>
+        <Label fx:id="labelTotalAmount" text="£64.653" textFill="mediumpurple">
+            <HBox.margin>
+                <Insets left="210.0" />
+            </HBox.margin>
+            <font>
+                <Font size="20" />
+            </font>
+        </Label>
+    </HBox>
+
+    <HBox>
+        <VBox>
+            <HBox>
+                <Label text="Standing Charge Electricity" />
+                <Label fx:id="labelNoOfDays" text="33 days">
+                    <HBox.margin>
+                        <Insets left="100.0" />
+                    </HBox.margin>
+                </Label>
+                <Label text="x22.63p per day">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Label>
+                <Label fx:id="labelStandingCharge" text="£7.43">
+                    <HBox.margin>
+                        <Insets left="65.0" />
+                    </HBox.margin>
+                </Label>
+            </HBox>
+            <HBox>
+                <Label text="Usage charge single rate - electricity" />
+                <Label fx:id="labelUsageAmount" text="£54.123">
+                    <HBox.margin>
+                        <Insets left="300.0" />
+                    </HBox.margin>
+                </Label>
+            </HBox>
+        </VBox>
+    </HBox>
+
+    <HBox style="-fx-background-color: yellow">
+        <Label text="Total supply charges" textFill="mediumpurple" />
+        <Label fx:id="labelSupplyCharge" text="£61.553" textFill="mediumpurple">
+            <HBox.margin>
+                <Insets left="385.0" />
+            </HBox.margin>
+        </Label>
+    </HBox>
+
+    <HBox>
+        <padding>
+            <Insets bottom="5.0" />
+        </padding>
+    </HBox>
+
+    <HBox style="-fx-background-color: yellow">
+        <Label text="Plus VAT at 5%" textFill="mediumpurple" />
+        <Label fx:id="labelVAT" text="£3.10" textFill="mediumpurple">
+            <HBox.margin>
+                <Insets left="415.0" />
+            </HBox.margin>
+        </Label>
+    </HBox>
+
+    <HBox>
+        <padding>
+            <Insets bottom="15.0" />
+        </padding>
+    </HBox>
+
+    <HBox>
+        <Label text="Electricity readings for meter" textFill="mediumpurple" />
+        <Label fx:id="labelMeterNo" text="645372LMAO" textFill="mediumpurple">
+            <HBox.margin>
+                <Insets left="10.0" />
+            </HBox.margin>
+        </Label>
+        <padding>
+            <Insets bottom="5.0" />
+        </padding>
+    </HBox>
+
+    <VBox>
+        <HBox>
+            <Label text="Type">
+                <font>
+                    <Font name="Arial Bold" size="14.0" />
+                </font>
+            </Label>
+            <Label text="Period">
+                <font>
+                    <Font name="Arial Bold" size="14.0" />
+                </font>
+                <HBox.margin>
+                    <Insets left="50.0" />
+                </HBox.margin>
+            </Label>
+            <Label text="Opening read">
+                <font>
+                    <Font name="Arial Bold" size="14.0" />
+                </font>
+                <HBox.margin>
+                    <Insets left="90.0" />
+                </HBox.margin>
+            </Label>
+            <Label text="Closing read">
+                <font>
+                    <Font name="Arial Bold" size="14.0" />
+                </font>
+                <HBox.margin>
+                    <Insets left="40.0" />
+                </HBox.margin>
+            </Label>
+            <Label text="kWh">
+                <font>
+                    <Font name="Arial Bold" size="14.0" />
+                </font>
+                <HBox.margin>
+                    <Insets left="75.0" />
+                </HBox.margin>
+            </Label>
+        </HBox>
+        <HBox>
+            <padding>
+                <Insets top="15.0" />
+            </padding>
+        </HBox>
+        <HBox>
+            <Label text="Day Rate" />
+            <Label fx:id="labelDate" text="30/12/2021 - 31/01/2022">
+                <HBox.margin>
+                    <Insets left="5.0" />
+                </HBox.margin>
+            </Label>
+            <Label fx:id="labelOpening" text="40470.63 E">
+                <HBox.margin>
+                    <Insets left="25.0" />
+                </HBox.margin>
+            </Label>
+            <Label fx:id="labelClosing" text="40516.687 E">
+                <HBox.margin>
+                    <Insets left="70.0" />
+                </HBox.margin>
+            </Label>
+            <Label fx:id="labelKWH" text="236.212 kWh">
+                <HBox.margin>
+                    <Insets left="60.0" />
+                </HBox.margin>
+            </Label>
+        </HBox>
+
+    </VBox>
+    <HBox style="-fx-background-color: yellow">
+        <Label text="Total units" textFill="mediumpurple"/>
+        <Label fx:id="totalkWh" text="282.262 kWh" textFill="mediumpurple">
+            <HBox.margin>
+                <Insets left="430" />
+            </HBox.margin>
+        </Label>
+      <VBox.margin>
+         <Insets top="10.0" />
+      </VBox.margin>
+    </HBox>
+
+    <Label text="Charges" textFill="mediumpurple">
+        <VBox.margin>
+            <Insets top="50" bottom="10"/>
+        </VBox.margin>
+    </Label>
+
+    <HBox>
+        <Label text="Period">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label text="Type">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="120.0" />
+            </HBox.margin>
+        </Label>
+        <Label text="kWh">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="70.0" />
+            </HBox.margin>
+        </Label>
+        <Label text="Rate(£)">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="70.0" />
+            </HBox.margin>
+        </Label>
+        <Label text="Price">
+            <font>
+                <Font name="Arial Bold" size="14.0" />
+            </font>
+            <HBox.margin>
+                <Insets left="75.0" />
+            </HBox.margin>
+        </Label>
+    </HBox>
+    <HBox>
+        <VBox.margin>
+            <Insets top="10.0" />
+        </VBox.margin>
+        <Label fx:id="labelPeriod" text="30/12/2021 - 31/01/2022" />
+        <Label text="Day Rate">
+            <HBox.margin>
+                <Insets left="20.0" />
+            </HBox.margin>
+        </Label>
+        <Label fx:id="labelChargeskWh" text="46.050">
+            <HBox.margin>
+                <Insets left="55.0" />
+            </HBox.margin>
+        </Label>
+        <Label fx:id="labelRate" text="0.19349">
+            <HBox.margin>
+                <Insets left="60.0" />
+            </HBox.margin>
+        </Label>
+        <Label fx:id="labelPrice" text="£54.123 kWh">
+            <HBox.margin>
+                <Insets left="60.0" />
+            </HBox.margin>
+        </Label>
+    </HBox>
+
+    <HBox style="-fx-background-color: yellow">
+        <Label text="Total" textFill="mediumpurple"/>
+        <Label fx:id="totalPrice" text="£54.123" textFill="mediumpurple">
+            <HBox.margin>
+                <Insets left="460" />
+            </HBox.margin>
+        </Label>
+        <VBox.margin>
+            <Insets top="15.0" />
+        </VBox.margin>
+    </HBox>
+
+</VBox>

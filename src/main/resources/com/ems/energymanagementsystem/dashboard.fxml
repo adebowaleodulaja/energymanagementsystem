@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane fx:id="mainPanel" prefHeight="378.0" prefWidth="600.0" style="-fx-background-color: mediumpurple;"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="com.ems.energymanagementsystem.DashboardController">
+    <content>
+        <GridPane hgap="10.0" vgap="10.0">
+            <children>
+                <Label prefHeight="19.0" prefWidth="274.0" text="Information about your tariff" textFill="#fff200">
+                    <font>
+                        <Font size="15.0"/>
+                    </font>
+                </Label>
+
+                <Label prefHeight="17.0" prefWidth="149.0" text="               " GridPane.columnIndex="1"/>
+                <Label style="-fx-text-fill: white;" text="Electricity" GridPane.rowIndex="1">
+                    <padding>
+                        <Insets top="15.0"/>
+                    </padding>
+                    <font>
+                        <Font name="Arial" size="18.0"/>
+                    </font>
+                </Label>
+                <Label prefHeight="33.0" prefWidth="92.0" style="-fx-text-fill: white;" text="Gas"
+                       GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Arial" size="18.0"/>
+                    </font>
+                    <GridPane.margin>
+                        <Insets/>
+                    </GridPane.margin>
+                    <padding>
+                        <Insets top="15.0"/>
+                    </padding>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200#fff200;" text="Tariff Name:" GridPane.columnIndex="1"
+                       GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelGasTariffName" style="-fx-text-fill: white;" text="Flexible 6 Direct"
+                       GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets left="85.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200#fff200;" text="Tariff Name:" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelElectTariffName" style="-fx-text-fill: white;" text="Flexible 6 Direct"
+                       GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets left="85.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200;" text="Payment Method:" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelElectPayMethod" style="-fx-text-fill: white;" text="Direct Debit"
+                       GridPane.rowIndex="4">
+                    <GridPane.margin>
+                        <Insets left="110.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200;" text="Payment Method:" GridPane.columnIndex="1"
+                       GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelGasPayMethod" style="-fx-text-fill: white;" text="Direct Debit"
+                       GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <GridPane.margin>
+                        <Insets left="110.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200;" text="Tariff end date:" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelElectEndDate" style="-fx-text-fill: white;" text="N/A" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets left="110.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200;" text="Tariff end date:" GridPane.columnIndex="1"
+                       GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelGasEndDate" style="-fx-text-fill: white;" text="N/A" GridPane.columnIndex="1"
+                       GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets left="110.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200;" text="Exit fees*:" GridPane.rowIndex="6">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelElectExitFee" style="-fx-text-fill: white;" text="N/A" GridPane.rowIndex="6">
+                    <GridPane.margin>
+                        <Insets left="110.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200;" text="Exit fees*:" GridPane.columnIndex="1"
+                       GridPane.rowIndex="6">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelGasExitFee" style="-fx-text-fill: white;" text="N/A" GridPane.columnIndex="1"
+                       GridPane.rowIndex="6">
+                    <GridPane.margin>
+                        <Insets left="110.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200;" text="Annual usage:" GridPane.rowIndex="7">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelElectUsage" style="-fx-text-fill: white;" text="2,115 kWh" GridPane.rowIndex="7">
+                    <GridPane.margin>
+                        <Insets left="110.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200;" text="Annual usage:" GridPane.columnIndex="1"
+                       GridPane.rowIndex="7">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelGasUsage" style="-fx-text-fill: white;" text="12,115 kWh" GridPane.columnIndex="1"
+                       GridPane.rowIndex="7">
+                    <GridPane.margin>
+                        <Insets left="110.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: white;" text="(estimated value)" GridPane.rowIndex="8"/>
+                <Label style="-fx-text-fill: white;" text="(estimated value)" GridPane.columnIndex="1"
+                       GridPane.rowIndex="8"/>
+
+                <Label style="-fx-text-fill: white;" text="Your tariff rate" GridPane.rowIndex="9">
+                    <font>
+                        <Font name="Arial bold" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200;" text="Unit rate per kWh:" GridPane.rowIndex="10">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelElectRate" style="-fx-text-fill: white;" text="20.35p" GridPane.rowIndex="10">
+                    <GridPane.margin>
+                        <Insets left="115.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200;" text="Unit rate per kWh:" GridPane.columnIndex="1"
+                       GridPane.rowIndex="10">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelGasRate" style="-fx-text-fill: white;" text="5.349p" GridPane.columnIndex="1"
+                       GridPane.rowIndex="10">
+                    <GridPane.margin>
+                        <Insets left="115.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200;" text="Standing charge:" GridPane.rowIndex="11">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelElectStandingCharge" style="-fx-text-fill: white;" text="23.76p per day"
+                       GridPane.rowIndex="11">
+                    <GridPane.margin>
+                        <Insets left="115.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+
+                <Label style="-fx-text-fill: #fff200;" text="Standing charge:" GridPane.columnIndex="1"
+                       GridPane.rowIndex="11">
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="labelGasStandingCharge" style="-fx-text-fill: white;" text="26.11p per day"
+                       GridPane.columnIndex="1" GridPane.rowIndex="11">
+                    <GridPane.margin>
+                        <Insets left="115.0"/>
+                    </GridPane.margin>
+                    <font>
+                        <Font name="Arial" size="14.0"/>
+                    </font>
+                </Label>
+            </children>
+            <columnConstraints>
+                <ColumnConstraints maxWidth="283.0" minWidth="114.0" prefWidth="283.0"/>
+                <ColumnConstraints maxWidth="300.0" minWidth="10.0" prefWidth="283.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="19.0" minHeight="19.0" prefHeight="19.0"/>
+                <RowConstraints maxHeight="33.0" minHeight="33.0" prefHeight="33.0"/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+                <RowConstraints/>
+            </rowConstraints>
+        </GridPane>
+    </content>
+    <header>
+        <Label contentDisplay="CENTER" style="-fx-background-color: white;" text="About your Tariff"
+               textFill="mediumpurple">
+            <font>
+                <Font name="Arial Bold" size="15.0"/>
+            </font>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <padding>
+                <Insets left="5.0"/>
+            </padding>
+        </Label>
+    </header>
+
+</DialogPane>

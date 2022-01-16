@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.text.Font?>
+<BorderPane fx:id="mainContainer" xmlns:fx="http://javafx.com/fxml" fx:controller="com.ems.energymanagementsystem.MainScreenController">
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <Menu text="New">
+                    <MenuItem text="Customer" onAction="#newCustomer"/>
+                    <MenuItem text="Tariff" onAction="#newTariff"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="User Account" onAction="#newUserAccount"/>
+                </Menu>
+                <MenuItem text="Close" onAction="#exitApplication"/>
+            </Menu>
+            <Menu text="Edit">
+                <MenuItem text="Update Customer" onAction="#editCustomer"/>
+                <MenuItem text="Update Tariff" onAction="#editTariff"/>
+                <!--<MenuItem text="Delete Customer"/>
+                <MenuItem text="Delete Tariff"/>
+                <SeparatorMenuItem/>
+                <Menu text="User Account">
+                    <MenuItem text="Update"/>
+                    <MenuItem text="Delete"/>
+                </Menu>-->
+
+            </Menu>
+            <Menu text="View">
+                <MenuItem text="Generate Invoice" onAction="#generateInvoice"/>
+                <SeparatorMenuItem/>
+                <MenuItem text="Dashboard" onAction="#dashboard"/>
+            </Menu>
+            <Menu text="Help">
+                <MenuItem text="About" onAction="#about"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <TableView fx:id="customerTable">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+            <columns>
+                <TableColumn text="Customer Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="fullName"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Phone Number">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="phoneNumber"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Address">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="address"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Tariff">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="tariff"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Meter Type">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="meterType"/>
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn text="Account/Meter Number">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="accountNumber"/>
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox style="-fx-background-color: mediumpurple;" >
+            <padding>
+                <Insets bottom="10" left="20" right="20" top="10"/>
+            </padding>
+            <Label text="Welcome, you're logged in as: " style="-fx-background-color: mediumpurple; -fx-text-fill: whitesmoke;">
+                <font>
+                    <Font size="15"/>
+                </font>
+            </Label>
+            <Label fx:id="loginName" text="user_name" style="-fx-background-color: mediumpurple; -fx-text-fill: yellow;">
+                <font>
+                    <Font name="Arial bold" size="15"/>
+                </font>
+            </Label>
+        </HBox>
+    </bottom>
+</BorderPane>
