@@ -81,7 +81,6 @@ public class TariffController {
         }
         Tariff editedTariff = new Tariff(tariffName, electricityRate, gasRate);
         EMSData.getInstance().saveTariffToFile(editedTariff);
-
     }
 
     /**
