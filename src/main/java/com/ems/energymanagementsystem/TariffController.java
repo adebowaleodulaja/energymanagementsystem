@@ -11,7 +11,7 @@ import javafx.scene.control.TextFormatter;
 
 import java.text.DecimalFormat;
 import java.text.ParsePosition;
-import java.util.ArrayList;
+import java.util.List;
 
 public class TariffController {
 
@@ -24,7 +24,7 @@ public class TariffController {
     @FXML
     private DialogPane parentContainer;
 
-    private ArrayList<Tariff> tariffs;
+    private List<Tariff> tariffs;
 
     public void initialize() {
         rateFormatter(textElectricityRate);
