@@ -46,7 +46,7 @@ public class TariffController {
     }
 
     /**
-     * Sets the Tariff fields for editing purposes only.
+     * Sets the Tariff fields for editing purposes.
      */
     public void setValuesForEditing(String tariffName) {
         boolean found = false;
